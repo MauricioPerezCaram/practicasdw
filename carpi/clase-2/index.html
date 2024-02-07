@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Clase 2</title>
+    <link
+      rel="shortcut icon"
+      href="./images/CSS3_logo_and_wordmark.svg.png"
+      type="image/x-icon"
+    />
   </head>
   <body>
     <h1>Clase 2</h1>
@@ -12,6 +17,7 @@
       <li>Quienes somos</li>
       <li>Servicios</li>
       <li>Contacto</li>
+      <li><a href="#piedepagina">Footer</a></li>
     </ol>
     <ul>
       <li>Esto</li>
@@ -56,8 +62,63 @@
         >Escribe un mensaje
         <textarea name="" id="mensaje" cols="10" rows="10" required></textarea>
       </label>
+      <hr />
+      <p>
+        Radio es para seleccionar uno u otro, siempre y cuando tengan el mismo
+        name
+      </p>
+
+      <label for="si"> <input type="radio" name="siono" id="si" />Si </label>
+      <label for="no"> <input type="radio" name="siono" id="no" />No </label>
+      <label for="nose">
+        <input type="radio" name="siono" id="nose" />No se
+      </label>
+
+      <hr />
+      <p>Checkbox es para seleccionar uno o varios</p>
+      <label for="sicheck">
+        <input type="checkbox" name="sionocheck" id="sicheck" />Si
+      </label>
+      <label for="nocheck">
+        <input type="checkbox" name="sionocheck" id="nocheck" />No
+      </label>
+      <label for="nosecheck">
+        <input type="checkbox" name="sionocheck" id="nosecheck" />No se
+      </label>
+      <hr />
+      <select name="" id="">
+        <option disabled selected>Selecciona un pais</option>
+        <option>Argentina</option>
+        <option>Chile</option>
+        <option>Uruguay</option>
+      </select>
+      <hr />
       <button type="submit">Enviar</button>
       <button type="reset">Reset</button>
     </form>
+    <br />
+    <hr />
+    <br />
+    <a href="https://www.facebook.com/" target="_blank"> Facebook </a>
+    <a id="piedepagina" href="./contacto.html">Contacto</a>
+    <hr />
+    <img
+      src="./images/CSS3_logo_and_wordmark.svg.png"
+      width="100px"
+      alt="logo css"
+      title="logo css"
+    />
+    <!-- title sirve para poner el mouse por arriba y que nos aparezca cartel -->
+
+    <p>para meter video lo buscas en yt y en compartir buscas enlace</p>
+    <iframe
+      width="300"
+      height="150"
+      src="https://www.youtube.com/embed/Sagg08DrO5U?si=9_TjMSoBx3pIznvT"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    ></iframe>
   </body>
 </html>
