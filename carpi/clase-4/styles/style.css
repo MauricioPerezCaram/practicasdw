@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  background-color: rgb(141, 134, 134);
+  position: sticky;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+}
+
+.item {
+  display: inline-block;
+  margin: 20px;
+}
+
+.item a {
+  color: aqua;
+  text-decoration: none;
+}
+
+.item.active a {
+  background-color: rgb(0, 0, 0);
+  color: antiquewhite;
+}
+
+.item a:hover {
+  text-decoration: underline;
+}
+
+.carta {
+  width: 30%;
+  padding: 10px;
+  background-color: blueviolet;
+  display: inline-block;
+  margin-inline: 1.5%;
+  overflow: hidden;
+  position: relative;
+  margin: 10px;
+}
+
+.carta-imagen {
+  width: 100%;
+}
+
+.carta-titulo {
+  font-size: 35px;
+}
+
+.carta-texto {
+  font-size: 25px;
+  background-color: aliceblue;
+}
+
+.carta-boton {
+  background-color: rgb(204, 201, 207);
+  border: 0;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.carta-imagen,
+.carta-titulo,
+.carta-texto,
+.carta-boton {
+  margin: 10px;
+  padding: 5px;
+}
+
+.whatsapp {
+  position: fixed;
+  bottom: 10%;
+  right: 5%;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.wpp {
+  width: 50px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
