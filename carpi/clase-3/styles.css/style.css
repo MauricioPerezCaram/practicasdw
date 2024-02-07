@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: rgb(127, 174, 228);
+}
+
+nav ul {
+  color: aqua;
+  list-style-type: none;
+}
+
+body {
+  background-color: rgb(139, 130, 130);
+  font-family: "Open Sans", sans-serif;
+}
+
+.menu {
+  background-color: blue;
+  list-style-position: inside;
+}
+
+.menu li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.menu li a {
+  color: chartreuse;
+  background-color: black;
+}
+
+.caja {
+  width: 600px;
+  height: 100vh;
+  background-color: rgb(93, 99, 104);
+  margin: 10px;
+  padding: 40px;
+  text-align: right;
+  line-height: 40px;
+  color: aliceblue;
+  background-image: url("../images/4665621-paisaje-de-montaña-con-ríos-y-bosques.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+
+.caja2 {
+  width: 100%;
+  margin: 10px;
+  padding: 40px;
+  text-align: right;
+  line-height: 40px;
+  color: aliceblue;
+  background-image: url("../images/4665621-paisaje-de-montaña-con-ríos-y-bosques.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  border-radius: 25px;
+  text-decoration: underline wavy;
+}
