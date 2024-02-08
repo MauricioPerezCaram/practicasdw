@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.cajita {
+  transition-property: all;
+  transition-duration: 2s;
+  transition-timing-function: ease;
+  height: 100px;
+  width: 20%;
+  background-color: rgb(50, 179, 179);
+}
+
+.cajita1:hover {
+  width: 100%;
+  background-color: rgb(76, 185, 43);
+}
+
+.cajita2 {
+  animation: cajita2mov 2s;
+}
+
+@keyframes cajita2mov {
+  100% {
+    width: 100%;
+  }
+}

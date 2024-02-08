@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(153, 60, 137);
+}
+
+.container {
+  width: 800px;
+  height: 400px;
+  display: grid;
+  /* grid-template-columns: 25% 50% 10%; */
+  grid-template-columns: repeat(4, 1fr);
+  /* grid-template-columns: 2.5fr 1fr; */
+  grid-template-rows: 1fr 1fr 1fr;
+  /* tocar en elements div grid para ver las culumnas */
+  grid-template-areas:
+    "caja2 caja3 caja1 caja1"
+    "caja2 caja3 caja4 caja5"
+    "caja6 caja6 caja4 caja5";
+}
+
+.caja {
+  border: 1px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.caja1 {
+  grid-area: caja1;
+}
+.caja2 {
+  grid-area: caja2;
+}
+.caja3 {
+  grid-area: caja3;
+}
+.caja4 {
+  grid-area: caja4;
+}
+.caja5 {
+  grid-area: caja5;
+}
+.caja6 {
+  grid-area: caja6;
+}
+
+.containerm {
+  display: grid;
+  width: 100%;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "cajam1 cajam1 cajam2 cajam4"
+    "cajam1 cajam1 cajam3 cajam5";
+  gap: 5px 55px;
+}
+
+.cajam {
+  border: salmon 1px solid;
+  display: grid;
+  place-items: center;
+}
+
+.cajam1 {
+  grid-area: cajam1;
+  background-color: antiquewhite;
+}
+.cajam2 {
+  grid-area: cajam2;
+  background-color: rgb(71, 58, 40);
+}
+
+.cajam3 {
+  grid-area: cajam3;
+  background-color: rgb(64, 131, 43);
+}
+
+.cajam4 {
+  grid-area: cajam4;
+  background-color: rgb(240, 147, 26);
+}
+
+.cajam5 {
+  grid-area: cajam5;
+  background-color: rgb(22, 21, 20);
+}
