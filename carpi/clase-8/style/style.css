@@ -8,7 +8,7 @@
   transition-property: all;
   transition-duration: 2s;
   transition-timing-function: ease;
-  height: 100px;
+  height: 500px;
   width: 20%;
   background-color: rgb(50, 179, 179);
 }
@@ -20,10 +20,67 @@
 
 .cajita2 {
   animation: cajita2mov 2s;
+  background-color: rgb(149, 143, 209);
+}
+
+.cajita3 {
+  -webkit-animation: rotate-scale-up 0.65s linear both;
+  animation: rotate-scale-up 0.65s linear both;
+  animation-delay: 2s;
+  background-color: blue;
+}
+
+.cajita4 {
+  -webkit-animation: rotate-scale-up 0.65s linear both;
+  animation: rotate-scale-up 0.65s linear both;
+  animation-delay: 3s;
+}
+
+.cajita5 {
+  background-color: brown;
+}
+.cajita6 {
+  background-color: rgb(112, 170, 98);
+}
+.cajita7 {
+  background-color: rgb(163, 57, 167);
 }
 
 @keyframes cajita2mov {
   100% {
     width: 100%;
+  }
+}
+
+/* https://animista.net */
+.rotate-scale-up {
+}
+
+@-webkit-keyframes rotate-scale-up {
+  0% {
+    -webkit-transform: scale(1) rotateZ(0);
+    transform: scale(1) rotateZ(0);
+  }
+  50% {
+    -webkit-transform: scale(2) rotateZ(180deg);
+    transform: scale(2) rotateZ(180deg);
+  }
+  100% {
+    -webkit-transform: scale(1) rotateZ(360deg);
+    transform: scale(1) rotateZ(360deg);
+  }
+}
+@keyframes rotate-scale-up {
+  0% {
+    -webkit-transform: scale(1) rotateZ(0);
+    transform: scale(1) rotateZ(0);
+  }
+  50% {
+    -webkit-transform: scale(2) rotateZ(180deg);
+    transform: scale(2) rotateZ(180deg);
+  }
+  100% {
+    -webkit-transform: scale(1) rotateZ(360deg);
+    transform: scale(1) rotateZ(360deg);
   }
 }
